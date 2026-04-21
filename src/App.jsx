@@ -1,7 +1,11 @@
+import Projects from "./components/project/Projects"
 
 const App = () => {
   return (
-    <div className="text-[70px]">Hello</div>
+    <div>
+    <h1>My Portfolio</h1>
+    <Projects/>
+    </div>
   )
 }
 
