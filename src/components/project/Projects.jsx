@@ -10,40 +10,34 @@ function Projects({
   challenges,
 }) {
   return (
-    <div>
-      <h2>My Pervious Projects</h2>
-      <p>
-        I have selected three projects that I have completed so far. These
-        projects showcase my skills and demonstrate how I have continued to
-        learn and improve over time.
-      </p>
-      <div>
-        <div>
-          <h3>Name of the project{name}</h3>
-          <img src={screenshot} alt="project UI" />
+    <div className="flex justify-center">
+      <div className="flex gap-6 bg-black p-6 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.5)]">
+        <div className="w-50" >
+          <h3 className="text-center mb-2">{name}</h3>
+          <img src={screenshot} alt="project UI" className="w-full  object-cover rounded-md" />
         </div>
-        <div>
+        <div className="w-50 space-y-2 ">
           <p>
-            <span>Tech Used:</span> {Tech}
+            <span className="font-semibold">Tech Used :</span> {Tech}
           </p>
           <p>
-            <span>Overview:</span> {background}
+            <span className="font-semibold" >Overview :</span> {background}
           </p>
           <p>
-            <span>Project purpose:</span> {purpose}
+            <span className="font-semibold" >Project purpose :</span> {purpose}
           </p>
           <p>
-            <span>Skills gained:</span> {skills}
+            <span className="font-semibold" >Skills :</span> {skills}
           </p>
           <p>
-            <span>Project Role:</span> {role}
+            <span className="font-semibold" >Project Role :</span> {role}
           </p>
           <p>
-            <span>Challenges:</span> {challenges}
+            <span className="font-semibold" >Challenges :</span> {challenges}
           </p>
 
-          <a href={Github} target="_blank">
-            View GitHub Repo:
+          <a href={Github} target="_blank" className="text-blue-400 !no-underline">
+            View GitHub Repo
           </a>
         </div>
       </div>
