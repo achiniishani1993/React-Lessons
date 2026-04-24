@@ -44,7 +44,7 @@ function Projects({
         rel="noopener noreferrer"
         className="inline-block text-blue-300  !no-underline hover:text-blue-200 transition font-medium pt-2"
       >
-        View GitHub Repository →
+        View GitHub Repository 
       </a>
 
     </div>
