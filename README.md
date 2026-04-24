@@ -11,6 +11,7 @@ This project is a personal portfolio built using React, where I created reusable
 * Tailwind CSS
 * HTML5
 * CSS3
+* React Router DOM
 
 # What I Learned
 * How to build and reuse React components
@@ -19,3 +20,12 @@ This project is a personal portfolio built using React, where I created reusable
 * Using Tailwind CSS for fast and responsive styling
 * Improving UI design and layout skills
 
+# Assignment lesson R2: Pages, Events, and useState 
+
+This project is showcases different pages such as Home, About, and Portfolio, along with featured projects. The goal of this project is to demonstrate skills in React, component-based architecture, routing, and state management.
+
+# What I Learned
+* Implementing routing with React Router
+* Managing state with useState
+* Conditional rendering in React
+* Styling with Tailwind CSS
