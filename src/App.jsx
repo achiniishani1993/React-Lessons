@@ -2,13 +2,14 @@ import { BrowserRouter as Router, Routes,Route, BrowserRouter } from 'react-rout
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
+import { NavBar } from './components/navBar/NavBar';
 
 
 const App = () => {
   return (
     <Router>
       <div>
-        
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
