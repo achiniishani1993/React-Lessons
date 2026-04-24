@@ -1,12 +1,19 @@
 import MenuIcon from '@mui/icons-material/Menu';
+import { SideBar } from "../sideBar/SideBar";
+import { useState } from "react";
+
+
 
 export const NavBar = () => {
+
+const [open, setOpen] = useState(false);
+
   return (
  <div className="font-serif">
   <div className="relative h-[300px] md:h-[400px] bg-cover bg-center bg-[url('/bgg.png')] text-black px-4">
 
     <div className="absolute top-4 right-4">
-      <MenuIcon className="text-black text-3xl md:text-4xl cursor-pointer" />
+      <MenuIcon className="text-black text-3xl md:text-4xl cursor-pointer" onClick={() => setOpen(true)}/>
     </div>
 
     <div className="flex flex-col justify-center items-center h-full text-center">
@@ -23,6 +30,15 @@ export const NavBar = () => {
     </div>
 
   </div>
+  {open && (
+  <>
+    <div
+      className="fixed inset-0 bg-black/40"
+      onClick={() => setOpen(false)}
+    />
+    <SideBar onClose={() => setOpen(false)} />
+  </>
+)}
 </div>
   )
 }
