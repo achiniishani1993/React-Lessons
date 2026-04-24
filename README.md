@@ -12,6 +12,7 @@ This project is a personal portfolio built using React, where I created reusable
 * HTML5
 * CSS3
 * React Router DOM
+* Material UI
 
 # What I Learned
 * How to build and reuse React components
