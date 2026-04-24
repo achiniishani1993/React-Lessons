@@ -21,8 +21,8 @@ const [open, setOpen] = useState(false);
         Hey! Welcome to my portfolio
       </h1>
 
-      <p className="mt-3 text-base sm:text-lg md:text-xl font-semibold max-w-2xl">
-        I'm a Front-End Developer passionate about building clean, responsive,
+      <p className="mt-3 text-base sm:text-lg md:text-xl font-semibold max-w-7xl">
+        I'm a <span className="font-bold text-2xl"> Front-End Developer </span> passionate about building clean, responsive,
         and user-friendly web experiences. This portfolio showcases some of my
         work, skills, and learning journey so far. Feel free to explore my
         projects and reach out if you'd like to connect or collaborate!

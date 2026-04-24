@@ -8,7 +8,7 @@ export const SideBar = ({onClose}) => {
        <CloseIcon className="mb-5 cursor-pointer" onClick={onClose}/>
        <ul className="space-y-4  text-lg font-semibold no-underline ">
         <li  className="hover:bg-gray-400 transition text-center">
-            <Link to="/about" onClick={onClose} className="text-white text-xl font-semibold !no-underline ">Home</Link>
+            <Link to="/" onClick={onClose} className="text-white text-xl font-semibold !no-underline ">Home</Link>
         </li>
         <li className="hover:bg-gray-400 transition text-center">
             <Link to="/about" onClick={onClose} className="text-white text-xl font-semibold !no-underline ">About</Link>
