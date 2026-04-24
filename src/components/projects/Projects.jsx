@@ -10,7 +10,7 @@ function Projects({
   challenges,
 }) {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center font-serif">
       <div className="flex gap-6 bg-[#2b4a46] text-white p-6 rounded-xl shadow-[0_0_25px_rgba(0,0,0,0.5)]">
         <div className="w-50" >
           <h3 className="text-center mb-2">{name}</h3>

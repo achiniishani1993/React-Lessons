@@ -18,3 +18,4 @@ This project is a personal portfolio built using React, where I created reusable
 * Structuring a scalable React application
 * Using Tailwind CSS for fast and responsive styling
 * Improving UI design and layout skills
+
