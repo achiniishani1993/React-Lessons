@@ -21,6 +21,10 @@ const Portfolio = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeProject = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="font-serif">
       <div className="m-5 flex flex-col gap-8">
@@ -83,7 +87,7 @@ const Portfolio = () => {
         <button onClick={() => setIsOpen(true)} >Open Project</button>
 
         {isOpen && (
-          <PopupWindow name = {popupInfo.name} tech = {popupInfo.tech} overview = {popupInfo.overview} role = {popupInfo.role} contribution = {popupInfo.contribution}/>
+          <PopupWindow name = {popupInfo.name} tech = {popupInfo.tech} overview = {popupInfo.overview} role = {popupInfo.role} contribution = {popupInfo.contribution} onClick = {closeProject}/>
         )}
       </div>
     </div>
