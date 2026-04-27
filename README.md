@@ -30,3 +30,23 @@ This project is showcases different pages such as Home, About, and Portfolio, al
 * Managing state with useState
 * Conditional rendering in React
 * Styling with Tailwind CSS
+
+# Assignment lesson R3: OnChange, Objects, and Arrays.  
+
+The goal was to enhance a portfolio by adding an interactive popup component that dynamically displays detailed information about selected projects.
+
+# Features
+* Reusable Popup component
+* Dynamic content using props
+* State management with React Hooks (useState)
+* Conditional rendering for showing/hiding the popup
+* Clean UI styling using Tailwind CSS
+* Scalable structure for multiple projects
+
+# What I Learned
+
+* How to build reusable components with props
+* Managing UI state with useState
+* Conditional rendering in React
+* Structuring project data using objects
+* Passing functions as props for interaction between components
