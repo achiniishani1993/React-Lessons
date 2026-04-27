@@ -4,6 +4,7 @@ import ProjectOne from "../assets/project1.png";
 import ProjectTwo from "../assets/project2.png";
 import ProjectThree from "../assets/project3.png";
 import { Title } from "@mui/icons-material";
+import {PopupWindow} from "../components/popUp/PopupWindow"
 
 const Portfolio = () => {
   const [show, setShow] = useState(false);
@@ -17,6 +18,8 @@ const Portfolio = () => {
     contribution:
       " Improved the usability of Login and Registration pages with an updated password policy, a password strength meter, and a dynamic multi-step registration process. Implemented form validations for data integrity and security while managing version control and collaboration through Git. ",
   });
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="font-serif">
@@ -77,7 +80,11 @@ const Portfolio = () => {
       </div>
 
       <div>
-        <button>Open Project</button>
+        <button onClick={() => setIsOpen(true)} >Open Project</button>
+
+        {isOpen && (
+          <PopupWindow name = {popupInfo.name} tech = {popupInfo.tech} overview = {popupInfo.overview} role = {popupInfo.role} contribution = {popupInfo.contribution}/>
+        )}
       </div>
     </div>
   );
