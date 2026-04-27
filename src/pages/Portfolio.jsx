@@ -37,7 +37,7 @@ const Portfolio = () => {
 
         <button
           onClick={() => setShow(!show)}
-          className="wd-36 py-2 bg-[#2b4a46] text-white rounded-lg shadow-md hover:opacity-90 transition"
+          className="wd-36 py-2 bg-[#2b4a46] text-white !rounded-lg shadow-md hover:opacity-90 transition"
         >
           {show ? "Hide Projects" : "View Projects"}
         </button>
@@ -83,8 +83,9 @@ const Portfolio = () => {
         )}
       </div>
 
-      <div>
-        <button onClick={() => setIsOpen(true)} >Open Project</button>
+      <div className="m-5 flex flex-col gap-8">
+        <h2 className="!text-[20px] semi-bold">WORK EXPERIENCE</h2>
+        <button onClick={() => setIsOpen(true)} className="wd-36 py-2 bg-[#2b4a46] text-white !rounded-lg shadow-md hover:opacity-90 transition" >Open Project</button>
 
         {isOpen && (
           <PopupWindow name = {popupInfo.name} tech = {popupInfo.tech} overview = {popupInfo.overview} role = {popupInfo.role} contribution = {popupInfo.contribution} onClick = {closeProject}/>
