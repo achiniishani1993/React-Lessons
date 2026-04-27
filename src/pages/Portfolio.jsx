@@ -3,9 +3,20 @@ import Projects from "../components/projects/Projects";
 import ProjectOne from "../assets/project1.png";
 import ProjectTwo from "../assets/project2.png";
 import ProjectThree from "../assets/project3.png";
+import { Title } from "@mui/icons-material";
 
 const Portfolio = () => {
   const [show, setShow] = useState(false);
+
+  const [popupInfo, setPopupInfo] = useState({
+    name: "FFIEC CAT — CRI project ",
+    tech: "React, JavaScript, PrimeReact, CSS, Git",
+    overview:
+      "A responsive web application for FFIEC Cybersecurity Assessment Tool (CAT) compliance allows banks to evaluate inherent risk and compute the Cyber Risk Index (CRI)",
+    role: "Freelancer-Collaboration project",
+    contribution:
+      " Improved the usability of Login and Registration pages with an updated password policy, a password strength meter, and a dynamic multi-step registration process. Implemented form validations for data integrity and security while managing version control and collaboration through Git. ",
+  });
 
   return (
     <div className="font-serif">
@@ -63,6 +74,10 @@ const Portfolio = () => {
             />
           </>
         )}
+      </div>
+
+      <div>
+        <button>Open Project</button>
       </div>
     </div>
   );
