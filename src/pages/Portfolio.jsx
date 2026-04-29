@@ -4,7 +4,7 @@ import ProjectOne from "../assets/project1.png";
 import ProjectTwo from "../assets/project2.png";
 import ProjectThree from "../assets/project3.png";
 import { Title } from "@mui/icons-material";
-import {PopupWindow} from "../components/popUp/PopupWindow"
+import { PopupWindow } from "../components/popUp/PopupWindow";
 
 const Portfolio = () => {
   const [show, setShow] = useState(false);
@@ -44,6 +44,13 @@ const Portfolio = () => {
 
         {show && (
           <>
+            <div className="w-50 mx-auto">
+              <input
+                type="text"
+                className="form-control text-primary"
+                placeholder="Search Here"
+              />
+            </div>
             <Projects
               name="Cafe-nora"
               screenshot={ProjectOne}
@@ -85,10 +92,22 @@ const Portfolio = () => {
 
       <div className="m-5 flex flex-col gap-8">
         <h2 className="!text-[20px] semi-bold">WORK EXPERIENCE</h2>
-        <button onClick={() => setIsOpen(true)} className="wd-36 py-2 bg-[#2b4a46] text-white !rounded-lg shadow-md hover:opacity-90 transition" >Open Project</button>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="wd-36 py-2 bg-[#2b4a46] text-white !rounded-lg shadow-md hover:opacity-90 transition"
+        >
+          Open Project
+        </button>
 
         {isOpen && (
-          <PopupWindow name = {popupInfo.name} tech = {popupInfo.tech} overview = {popupInfo.overview} role = {popupInfo.role} contribution = {popupInfo.contribution} onClick = {closeProject}/>
+          <PopupWindow
+            name={popupInfo.name}
+            tech={popupInfo.tech}
+            overview={popupInfo.overview}
+            role={popupInfo.role}
+            contribution={popupInfo.contribution}
+            onClick={closeProject}
+          />
         )}
       </div>
     </div>
