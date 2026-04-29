@@ -1,8 +1,8 @@
 function Projects({
   name,
   screenshot,
-  Github,
-  Tech,
+  github,
+  tech,
   background,
   purpose,
   skills,
@@ -31,7 +31,7 @@ function Projects({
 
     <div className="w-full md:w-1/2 p-5 sm:p-6 space-y-3">
 
-      <p><span className="font-semibold">Tech Used:</span> {Tech}</p>
+      <p><span className="font-semibold">Tech Used:</span> {tech}</p>
       <p><span className="font-semibold">Overview:</span> {background}</p>
       <p><span className="font-semibold">Purpose:</span> {purpose}</p>
       <p><span className="font-semibold">Skills:</span> {skills}</p>
@@ -39,7 +39,7 @@ function Projects({
       <p><span className="font-semibold">Challenges:</span> {challenges}</p>
 
       <a
-        href={Github}
+        href={github}
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block text-blue-300  !no-underline hover:text-blue-200 transition font-medium pt-2"
