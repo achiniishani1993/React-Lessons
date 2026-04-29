@@ -50,3 +50,15 @@ The goal was to enhance a portfolio by adding an interactive popup component tha
 * Conditional rendering in React
 * Structuring project data using objects
 * Passing functions as props for interaction between components
+
+
+# Assignment lesson R4: Map, Some, and Filter
+
+This project adds a search bar to my portfolio page, allowing users to quickly find specific projects. The search functionality filters projects dynamically based on user input.
+
+What I Learned
+* How to use map() to dynamically render a list of projects
+* How to use filter() to create a search functionality
+* Managing user input with state in React
+* Updating the UI in real-time based on user interactions
+* Structuring data to make it easier to search and display
